@@ -2,10 +2,10 @@
 
 TGameMech::TGameMech() : QWidget()
 {
-    this->resize(1200, 800);
+    this->resize(800, 730);
     this->show();
 
-    fieldPos = QPoint(300, 100);
+    fieldPos = QPoint(160, 90);
 
     int personsCount = 3;
     int selPerson = qrand() % personsCount;
