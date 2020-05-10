@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/img"/>
+    <qresource prefix="/">
+        <file>finishFlag.jpg</file>
+        <file>earth.jpg</file>
+        <file>fire.jpg</file>
+        <file>water.jpg</file>
+        <file>mario.png</file>
+        <file>pacman.png</file>
+        <file>sonic.png</file>
+        <file>enemy1.png</file>
+        <file>enemy2.png</file>
+        <file>emptyCell.png</file>
+        <file>animation1.png</file>
+        <file>animation2.png</file>
+        <file>white.png</file>
+        <file>animation3.png</file>
+    </qresource>
+</RCC>
