@@ -6,7 +6,7 @@ TWaterGameCell::TWaterGameCell()
 }
 
 void TWaterGameCell::setupCurStih() {
-    img = QImage(":/water.jpg").scaled(cellSize, cellSize);
+    img = QImage(":/Images/water.jpg").scaled(cellSize, cellSize);
     person->addMagic("Water");
     paintStrength();
 }

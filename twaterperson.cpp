@@ -5,6 +5,6 @@ TWaterPerson::TWaterPerson() {
 }
 
 void TWaterPerson::setupCurPerson() {
-    img = QImage(":/mario.png").scaled(cellSize, cellSize);
+    img = QImage(":/Images/mario.png").scaled(cellSize, cellSize);
 
 }

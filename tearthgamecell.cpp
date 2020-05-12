@@ -6,7 +6,7 @@ TEarthGameCell::TEarthGameCell()
 }
 
 void TEarthGameCell::setupCurStih() {
-    img = QImage(":/earth.jpg").scaled(cellSize, cellSize);
+    img = QImage(":/Images/earth.jpg").scaled(cellSize, cellSize);
     person->addMagic("Earth");
     paintStrength();
 }

@@ -6,7 +6,7 @@ TSecondEnemy::TSecondEnemy()
 }
 
 void TSecondEnemy::setupCurEnemy() {
-    img = QImage(":/enemy2.png").scaled(cellSize, cellSize);
+    img = QImage(":/Images/enemy2.png").scaled(cellSize, cellSize);
 }
 
 QPoint TSecondEnemy::curEnemyMove(QPoint persPos) {

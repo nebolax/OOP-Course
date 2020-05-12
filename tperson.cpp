@@ -36,7 +36,7 @@ void TPerson::repaint() {
 }
 
 void TPerson::setupCurPerson() {
-    img = QImage(":/emptyCell.png");
+    img = QImage(":/Images/emptyCell.png");
 }
 
 void TPerson::addMagic(QString magicName) {

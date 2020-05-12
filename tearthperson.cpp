@@ -5,5 +5,5 @@ TEarthPerson::TEarthPerson() {
 }
 
 void TEarthPerson::setupCurPerson() {
-    img = QImage(":/pacman.png").scaled(cellSize, cellSize);
+    img = QImage(":/Images/pacman.png").scaled(cellSize, cellSize);
 }

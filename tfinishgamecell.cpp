@@ -6,7 +6,7 @@ TFinishGameCell::TFinishGameCell() : TGameCell()
 }
 
 void TFinishGameCell::setupCurStih() {
-    img = QImage(":/finishFlag.jpg").scaled(cellSize, cellSize);
+    img = QImage(":/Images/finishFlag.jpg").scaled(cellSize, cellSize);
 }
 
 void TFinishGameCell::procMove() {

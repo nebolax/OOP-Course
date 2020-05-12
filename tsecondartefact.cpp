@@ -6,7 +6,7 @@ TSecondArtefact::TSecondArtefact() {
 }
 
 void TSecondArtefact::setupCurArtefact() {
-    QImage whole = QImage(":/animation2.png");
+    QImage whole = QImage(":/Images/animation2.png");
     for(int i = 0; i < 5; i++) {
         for(int a = 0; a < 6; a++) {
             QImage curImg = QImage(147, 140, QImage::Format_ARGB32);

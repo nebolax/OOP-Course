@@ -6,7 +6,7 @@ TFireGameCell::TFireGameCell()
 }
 
 void TFireGameCell::setupCurStih() {
-    img = QImage(":/fire.jpg").scaled(cellSize, cellSize);
+    img = QImage(":/Images/fire.jpg").scaled(cellSize, cellSize);
     person->addMagic("Fire");
     paintStrength();
 }

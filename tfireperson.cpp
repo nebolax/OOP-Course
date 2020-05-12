@@ -5,5 +5,5 @@ TFirePerson::TFirePerson() {
 }
 
 void TFirePerson::setupCurPerson() {
-    img = QImage(":/sonic.png").scaled(cellSize, cellSize);
+    img = QImage(":/Images/sonic.png").scaled(cellSize, cellSize);
 }

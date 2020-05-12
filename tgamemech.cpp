@@ -2,6 +2,10 @@
 
 TGameMech::TGameMech() : QWidget()
 {
+
+}
+
+void TGameMech::startGame() {
     this->resize(800, 730);
     this->show();
 
@@ -50,6 +54,16 @@ TGameMech::TGameMech() : QWidget()
     }
 
     //wholeMap[person->y()][person->x()]->procMove(); // если нужно, чтобы первая клетка не реагировала с персонажем, закомментируйте эту строку
+}
+
+void TGameMech::endGame() {
+    wholeMap = QList<QList<TGameCell*>>();
+    fieldPos = QPoint();
+    person = new TPerson();
+    persPos = QPoint();
+    enemiesPos = QList<QPoint>();
+    moveKeys = QList<int>();
+    enemies = QList<TEnemy*>();
 }
 
 QList<QList<TGameCell*>> TGameMech::genMap() {
@@ -131,6 +145,10 @@ void TGameMech::keyPressEvent(QKeyEvent *event) {  // переопределен
         } else {
             procMove(event->key());
         }
+    } else if(event->key() == Qt::Key_Return) {
+        playing = true;
+        endGame();
+        startGame();
     }
 }
 

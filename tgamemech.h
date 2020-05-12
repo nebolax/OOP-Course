@@ -25,25 +25,27 @@ class TGameMech : public QWidget
     Q_OBJECT
 public:
     explicit TGameMech();
+    void startGame();
+    void endGame();
 
 private:
     QList<QList<TGameCell*>> genMap();
-
-    QList<QList<TGameCell*>> wholeMap = QList<QList<TGameCell*>>();
-
+    void procMove(int curKey);
+    void keyPressEvent(QKeyEvent *event) override;
     int cellSize = 80; // Размер одной клетки
     int mapCount = 8; // Размер карты (карта квадратная)
     bool playing = true;
     int finY = 0;
+
+    QList<QList<TGameCell*>> wholeMap = QList<QList<TGameCell*>>();
+
     QPoint fieldPos = QPoint();
 
-    void procMove(int curKey);
 
     TPerson *person = new TPerson();
     QPoint persPos = QPoint();
     QList<QPoint> enemiesPos = QList<QPoint>();
 
-    void keyPressEvent(QKeyEvent *event) override;
 
     QList<int> moveKeys = QList<int>();  // 0-up, 1-left, 2-down, 3-right
 

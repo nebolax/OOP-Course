@@ -18,7 +18,7 @@ void TEnemy::setup(QPoint enemyPos, QPoint fieldPix, int cellSize, QWidget *pare
 }
 
 void TEnemy::setupCurEnemy() {
-    img = QImage(":/emptyCell.png");
+    img = QImage(":/Images/emptyCell.png");
 }
 
 void TEnemy::moveEnemy(QPoint move) {

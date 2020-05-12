@@ -6,7 +6,7 @@ TFirstEnemy::TFirstEnemy()
 }
 
 void TFirstEnemy::setupCurEnemy() {
-    img = QImage(":/enemy1.png").scaled(cellSize, cellSize);
+    img = QImage(":/Images/enemy1.png").scaled(cellSize, cellSize);
 }
 
 QPoint TFirstEnemy::curEnemyMove(QPoint persPos) {

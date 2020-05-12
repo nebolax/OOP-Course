@@ -43,7 +43,7 @@ void TGameCell::setup(int cs, int mapSize, QPoint posPix, TPerson *person, QWidg
 }
 
 void TGameCell::setupCurStih() {
-    img = QImage(":/white.png").scaled(cellSize, cellSize);
+    img = QImage(":/Images/white.png").scaled(cellSize, cellSize);
     person->addMagic("NoneMagic");
 }
 
