@@ -5,6 +5,10 @@ TPerson::TPerson()
 
 }
 
+TPerson::~TPerson() {
+    canvas->close();
+}
+
 void TPerson::setup(QPoint fieldPosition, int cs, QPoint persPos, QWidget *par) {
     fieldPos = fieldPosition;
     cellSize = cs;

@@ -57,12 +57,21 @@ void TGameMech::startGame() {
 }
 
 void TGameMech::endGame() {
+    for(int i = 0; i < mapCount; i++) {
+        for(int a = 0; a < mapCount; a++) {
+            delete wholeMap[i][a];
+        }
+    }
     wholeMap = QList<QList<TGameCell*>>();
     fieldPos = QPoint();
+    delete person;
     person = new TPerson();
     persPos = QPoint();
     enemiesPos = QList<QPoint>();
     moveKeys = QList<int>();
+    for(int i = 0; i < enemies.size(); i++) {
+        delete enemies[i];
+    }
     enemies = QList<TEnemy*>();
 }
 

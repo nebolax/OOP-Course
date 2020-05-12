@@ -14,6 +14,7 @@ class TPerson
 {
 public:
     TPerson();
+    ~TPerson();
     void makeMove(QPoint dpos); // delta position
     void teleport(QPoint npos); // new position
     void setup(QPoint fieldPosition, int cs, QPoint persPos, QWidget *par);  // fieldPos - пиксели, persPos - клетки
